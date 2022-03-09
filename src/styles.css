@@ -1,16 +1,12 @@
 html {
   font-size: 80%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .calculator {
   border: 1px solid #ccc;
   border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 10px auto;
   width: 400px;
 }
 
@@ -36,7 +32,33 @@ html {
 
 button {
   height: 60px;
-  font-size: 2rem!important;
+  font-size: 2rem !important;
+}
+
+.new-calculator-button, .remove-calculator-button {
+  line-height: 0;
+  position: absolute;
+}
+
+.new-calculator-button {
+  font-size: 3rem !important;
+  padding-top: 1px;
+  width: 58px;
+  height: 58px;
+  border-radius: 29px;
+  top: 10px;
+  right: 10px;
+  margin: 10px;
+  z-index: 1;
+}
+
+.remove-calculator-button {
+  font-size: 1.5rem !important;
+  padding-top: 1px;
+  width: 29px;
+  height: 29px;
+  border-radius: 14px;
+  margin: 10px;
 }
 
 .equal-sign {
